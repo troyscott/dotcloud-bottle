@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bottle App</title>
+
+<title>Home</title>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBQdiFVW8-1E4h5NZoIZnusLF0zxCC9iwM&sensor=false"></script>
+
+<script src="usgs.js"></script>
 </head>
 <body>
 
-<h1> Bottle Works!!!</h2>
-</body>
+<!-- Main Page -->
 
+<div data-role="page" id="main">
+
+	<div data-role="header" data-position="fixed" >
+		<h1>USGS Report Menu </h1>
+		<a href="#options"  class="ui-btn-right" data-rel="dialog" data-transistion="pop" 
+			data-icon="gear" data-theme="b" >Options
+		</a>
+	</div>
+
+	<div data-role="content" >
+ 		<p><a  href="last_hour_m1-page.html" data-role="button"  >Past Hour - Magnitude 1+</a></p>
+		<p><a  href="past_day_m25-page.html" data-role="button"  >Past Day - Magnitude 2.5+</a></p>
+		<p><a  href="past_7_days_m5-page.html" data-role="button" >Past 7 Days - Magnitude 5+</a></p>
+		<p><a  href="past_7_days_m7-page.html" data-role="button"  >Past 7 Days - Magnitude 7+</a></p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<a class="ui-btn-left" href="http://earthquake.usgs.gov/earthquakes/catalogs/">
+		Data provided by US Geological Survey</a>
+	</div>
+
+</div>
+</body>
 </html>

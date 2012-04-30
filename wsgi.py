@@ -1,5 +1,5 @@
 import bottle
-import myapp
+import usgs_app 
 
 application = bottle.default_app()
 
