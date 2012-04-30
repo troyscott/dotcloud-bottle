@@ -1,0 +1,16 @@
+create a symbolic link to the static directory:
+
+for example:
+
+cd /home/dotcloud/dotcloud-bottle
+ln -s static pub
+
+You can use a different name for the symbolic link or not use it at all.  In either case you will have to edit the htdocs variable in myapp.py
+
+htdocs = '%s/newlinkname' % os.getcwd()
+
+OR
+
+htdoc = '%s/static' % os.getcwd()
+
+
