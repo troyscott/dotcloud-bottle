@@ -105,7 +105,7 @@ var getLastHourM1 = function() {
 	var $page = $("#last_hour_m1-page");
 	var report = $page.data("report");
 	var url = 'quake/' + report;
-	var refreshRate = 10000
+	var refreshRate = 60000
 
 	// prevent Internal 500 Server Error
 	if (typeof report == "undefined")
